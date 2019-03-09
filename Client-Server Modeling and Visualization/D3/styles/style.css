@@ -1,0 +1,68 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+
+.bodyMain {
+  width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0px 5px 10px 0px grey;
+}
+
+.inputMain {
+  width: 800px;
+  margin: 10px auto;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0px 5px 10px 0px grey;
+}
+
+.form-group {
+  margin: 5px 5px 5px 5px;
+}
+
+.graph {
+  width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0px 5px 10px 0px grey;
+}
+
+p, li {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.title {
+  text-align: center;
+  color: #242323;
+}
+
+h1 {
+  margin: 0 auto;
+  color: #000080;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+button {
+  margin: 5px auto;
+  padding: 10px 10px 10px 10px;
+  color: #0dbab1;
+}
+
+.grid line{
+  stroke = grey;
+}

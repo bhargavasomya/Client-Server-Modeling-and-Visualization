@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>DS5500 Client Server Viz</title>
+  </head>
+  <body>
+    <div class="bodyMain">
+      <h2 class="title">Client Server Modeling and Visualization</h2>
+
+    </div>
+
+    <div class="inputMain">
+        <div>
+
+            <div class="form-inline">
+                <center>
+                <div class="form-group">
+
+                    <label class="radio-inline"><input type="radio" name="optradio" checked>Standard Scaler</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Min-Max</label>
+                </div>
+                <div class="form-group">
+                    <label for="c">C</label>
+                    <input class="form-control" id="c" placeholder="1.0" value="1.0">
+                </div>
+                </center>
+                <span />
+                <center>
+                    <br>
+                <input type="button" class="btn btn-primary graphDisplayer" onclick="showGraph();" value="Plot", style="color: white; background-color: #0dbab1"></input>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="graph" />
+    <script src="scripts/main.js"></script>
+
+  </body>
+</html>
