@@ -8,23 +8,20 @@ var dataGroup = d3.select(".graph").append("svg")
   .append("g")
   .attr("transform", "translate(" + margin + ", " + margin + ")");
 
-function showGraph() {
-    var radios = document.getElementsByName('optradio');
-    var cInput = document.getElementById('c').value;
+function plotGraph() {
+    var preprocessing = document.getElementsByName('optradio');
+    var C = document.getElementById('c').value;
 
-    d3.selectAll('svg > g > *').remove();
-
-    console.log(cInput)
 
     var preprocess = ""
 
-    if (radios[0].checked) {
+    if (preprocessing[0].checked) {
         preprocess = "StandardScaler"
     } else {
         preprocess = "MinMaxScaler"
     }
 
-    var link = "http://127.0.0.1:5000/roc/" + preprocess + "/" + cInput;
+    var link = "http://127.0.0.1:5000/roc/" + preprocess + "/" + C;
     console.log(link);
 
     d3.json(link).then(function(data) {
@@ -47,6 +44,7 @@ function showGraph() {
         var scale_vertical = d3.scaleLinear()
                 .domain( [0.0, 1.0] )
                 .range( [0.0, width - 20] );
+
         // Gridline
         var gridlineshorizontal = d3.axisLeft()
                     .tickFormat(" ")
